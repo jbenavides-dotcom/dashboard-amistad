@@ -1,0 +1,43 @@
+name: Actualizar datos La Amistad
+
+on:
+  schedule:
+    - cron: '0 * * * *'        # cada hora (UTC)
+  workflow_dispatch: {}         # botón para forzarlo manualmente
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generar JSON desde la Sheet
+        env:
+          GOOGLE_SA_KEY_JSON: ${{ secrets.GOOGLE_SA_KEY_JSON }}
+        run: node scripts/build-datos.js
+
+      - name: Commit si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos-amistad.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los datos."
+          else
+            git commit -m "chore: actualizar datos La Amistad [skip ci]"
+            git push
+          fi

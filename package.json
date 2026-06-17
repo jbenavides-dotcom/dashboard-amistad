@@ -1,0 +1,12 @@
+{
+  "name": "dashboard-amistad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard de avance vs meta 2026 del programa La Amistad (La Palma y el Tucán)",
+  "scripts": {
+    "build": "node scripts/build-datos.js"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  }
+}

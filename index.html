@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Amistad · Avance vs Meta 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --crema:#f6f1e7; --marfil:#fffdf8; --cafe:#3b2a1e; --cafe-2:#5c4533;
+    --tinta:#2c211a; --tenue:#e7ddcc; --acento:#c8732e; --acento-2:#e0a356;
+    --verde:#5b7a4b; --linea:#e9e0d0; --muted:#8a7a68;
+    --sombra:0 10px 30px rgba(59,42,30,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--crema);color:var(--tinta);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 18px 64px}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0}
+
+  header.head{background:linear-gradient(135deg,var(--cafe) 0%,var(--cafe-2) 100%);
+    color:#f7efe2;border-radius:20px;padding:28px 30px;box-shadow:var(--sombra);
+    position:relative;overflow:hidden;}
+  header.head:after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;
+    background:radial-gradient(circle,rgba(224,163,86,.35),transparent 70%);}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acento-2);font-weight:600}
+  header.head h1{font-size:40px;line-height:1.05;margin:6px 0 4px}
+  header.head p{margin:0;color:#e9ddca;max-width:640px;font-size:15px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;font-size:12.5px;color:#cdbfa8}
+  .meta-row b{color:#f4e9d6;font-weight:600}
+
+  section.bloque{background:var(--marfil);border:1px solid var(--linea);border-radius:18px;
+    padding:24px 26px;margin-top:20px;box-shadow:var(--sombra);}
+  .bloque > h2{font-size:22px;color:var(--cafe);margin-bottom:18px}
+
+  .progreso{margin:22px 0}
+  .progreso:first-of-type{margin-top:6px}
+  .p-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+  .p-label{font-weight:600;font-size:16px;color:var(--cafe)}
+  .p-sub{font-size:13px;color:var(--muted)}
+  .p-pct{font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:var(--acento)}
+  .p-pct.verde{color:var(--verde)}
+  .bar{height:26px;background:var(--tenue);border-radius:999px;overflow:hidden;position:relative}
+  .fill{height:100%;width:0;border-radius:999px;transition:width 1.1s cubic-bezier(.22,.61,.36,1)}
+  .fill.amber{background:linear-gradient(90deg,var(--acento),var(--acento-2))}
+  .fill.green{background:linear-gradient(90deg,#4f6f40,#7c9c64)}
+  .p-bottom{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:7px}
+  .p-bottom b{color:var(--tinta);font-weight:600}
+
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .kpi{background:var(--marfil);border:1px solid var(--linea);border-radius:14px;padding:16px 16px}
+  .kpi .v{font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:var(--cafe);line-height:1}
+  .kpi .l{font-size:12.5px;color:var(--muted);margin-top:6px}
+
+  .proj{background:linear-gradient(135deg,#fbf3e6,#f4e7cf);border:1px dashed var(--acento-2);
+    border-radius:16px;padding:18px 22px;margin-top:20px;display:flex;gap:16px;align-items:center}
+  .proj .ico{font-size:30px}
+  .proj .big{font-family:'Playfair Display',serif;font-weight:700;color:var(--acento);font-size:22px}
+  .proj small{display:block;color:var(--cafe-2);font-size:13px}
+
+  .tabla-wrap{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--linea)}
+  th{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  tbody tr:hover{background:#faf5ec}
+  td.codigo{font-weight:700;color:var(--cafe)}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+
+  footer{margin-top:26px;text-align:center;color:var(--muted);font-size:12px}
+  .estado{text-align:center;color:var(--muted);padding:60px 20px;font-size:15px}
+  .err{color:#a3402a}
+
+  @media(max-width:560px){
+    header.head h1{font-size:30px}
+    .wrap{padding:18px 12px 48px}
+    section.bloque{padding:18px 16px}
+    .proj{flex-direction:column;text-align:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <div class="eyebrow">La Palma y el Tucán · PT 2026</div>
+    <h1 id="titulo">La Amistad</h1>
+    <p id="desc">Cargando datos…</p>
+    <div class="meta-row">
+      <span>Actualizado: <b id="fecha">—</b></span>
+      <span>Fuente: <b id="fuente">—</b></span>
+    </div>
+  </header>
+
+  <div id="estado" class="estado">⏳ Cargando datos…</div>
+
+  <div id="contenido" style="display:none">
+    <section class="bloque">
+      <h2>Avance vs Meta 2026</h2>
+      <div class="progreso">
+        <div class="p-top">
+          <div><div class="p-label">Compra en pergamino (CPS/CCS)</div><div class="p-sub" id="c1-sub"></div></div>
+          <div class="p-pct" id="c1-pct"></div>
+        </div>
+        <div class="bar"><div class="fill amber" id="c1-fill"></div></div>
+        <div class="p-bottom"><span>Comprado: <b id="c1-act"></b></span><span>Falta: <b id="c1-falta"></b></span></div>
+      </div>
+      <div class="progreso">
+        <div class="p-top">
+          <div><div class="p-label">Producción en verde (bultos de 35 kg)</div><div class="p-sub" id="c2-sub"></div></div>
+          <div class="p-pct verde" id="c2-pct"></div>
+        </div>
+        <div class="bar"><div class="fill green" id="c2-fill"></div></div>
+        <div class="p-bottom"><span>Terminado: <b id="c2-act"></b></span><span>Falta: <b id="c2-falta"></b></span></div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Indicadores</h2>
+      <div class="kpis" id="kpis"></div>
+      <div class="proj">
+        <div class="ico">🔮</div>
+        <div><div class="big" id="proj-big"></div><small id="proj-sub"></small></div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Baches registrados</h2>
+      <div class="tabla-wrap">
+        <table>
+          <thead><tr>
+            <th>Bache</th><th>Entrada</th><th>Remisión</th><th>Proveedor</th>
+            <th>Proceso</th><th>Variedad</th><th class="num">Kg brutos</th>
+            <th class="num">Kg disp.</th><th class="num">Sacos</th>
+          </tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Datos generados desde la Sheet PT 2026 vía GitHub Actions · <code>datos-amistad.json</code></footer>
+  </div>
+</div>
+
+<script>
+  var nf  = function(n){ return Number(n).toLocaleString('es-CO'); };
+  var nf1 = function(n){ return Number(n).toLocaleString('es-CO',{minimumFractionDigits:1,maximumFractionDigits:1}); };
+  var kg  = function(n){ return nf(Math.round(n)) + " kg"; };
+
+  function render(data){
+    var m = data.metas, a = data.actual;
+    var pctCompra = m.compra_pergamino_kg ? a.compra_pergamino_kg / m.compra_pergamino_kg * 100 : 0;
+    var pctBultos = m.bultos_verde ? a.bultos_verde / m.bultos_verde * 100 : 0;
+    var faltaCompra = m.compra_pergamino_kg - a.compra_pergamino_kg;
+    var faltaBultos = m.bultos_verde - a.bultos_verde;
+    var proyVerdeKg = a.disponible_pergamino_kg * (m.rendimiento_pct/100);
+    var proyBultos = proyVerdeKg / m.kg_por_bulto;
+
+    document.getElementById('titulo').textContent = data.programa;
+    document.getElementById('desc').textContent = data.descripcion;
+    document.getElementById('fecha').textContent = data.actualizado;
+    document.getElementById('fuente').textContent = data.fuente;
+
+    document.getElementById('c1-sub').textContent = "Meta: " + kg(m.compra_pergamino_kg);
+    document.getElementById('c1-pct').textContent = nf1(pctCompra) + "%";
+    document.getElementById('c1-act').textContent = kg(a.compra_pergamino_kg);
+    document.getElementById('c1-falta').textContent = kg(faltaCompra);
+
+    document.getElementById('c2-sub').textContent = "Meta: " + nf(m.bultos_verde) + " bultos · " + kg(m.verde_kg);
+    document.getElementById('c2-pct').textContent = nf1(pctBultos) + "%";
+    document.getElementById('c2-act').textContent = nf(a.bultos_verde) + " bultos · " + kg(a.verde_kg);
+    document.getElementById('c2-falta').textContent = nf(faltaBultos) + " bultos";
+
+    var kpis = [
+      { v: kg(a.compra_pergamino_kg), l:"Comprado en pergamino" },
+      { v: kg(a.disponible_pergamino_kg), l:"Disponible en pergamino" },
+      { v: nf(a.sacos), l:"Sacos" },
+      { v: nf(a.bultos_verde), l:"Bultos en verde (real)" },
+      { v: nf1(m.factor_rendimiento) + " · " + m.rendimiento_pct + "%", l:"Factor rendimiento objetivo" }
+    ];
+    document.getElementById('kpis').innerHTML = kpis.map(function(k){
+      return '<div class="kpi"><div class="v">'+k.v+'</div><div class="l">'+k.l+'</div></div>'; }).join('');
+
+    document.getElementById('proj-big').textContent = "≈ " + nf1(proyBultos) + " bultos (" + kg(proyVerdeKg) + " verde)";
+    document.getElementById('proj-sub').textContent =
+      "Proyección si se trillara hoy lo disponible (" + kg(a.disponible_pergamino_kg) + " a " +
+      m.rendimiento_pct + "%). El avance real terminado es " + nf(a.bultos_verde) + " bultos.";
+
+    document.getElementById('tbody').innerHTML = (data.baches||[]).map(function(b){
+      return '<tr><td class="codigo">'+b.bache+'</td><td>'+b.fecha_entrada+'</td><td>'+b.remision+
+        '</td><td>'+b.proveedor+'</td><td>'+b.proceso+'</td><td>'+b.variedad+
+        '</td><td class="num">'+nf(b.kg_brutos)+'</td><td class="num">'+nf(b.kg_disponibles)+
+        '</td><td class="num">'+nf(b.sacos)+'</td></tr>'; }).join('');
+
+    document.getElementById('estado').style.display = 'none';
+    document.getElementById('contenido').style.display = 'block';
+
+    requestAnimationFrame(function(){
+      document.getElementById('c1-fill').style.width = Math.min(pctCompra,100) + "%";
+      document.getElementById('c2-fill').style.width = Math.min(pctBultos,100) + "%";
+    });
+  }
+
+  function showError(err){
+    document.getElementById('estado').innerHTML =
+      '<span class="err">No se pudieron cargar los datos (' + err + ').</span>';
+    document.getElementById('desc').textContent = 'Error al cargar.';
+  }
+
+  fetch('./datos-amistad.json', { cache: 'no-store' })
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(render)
+    .catch(showError);
+</script>
+</body>
+</html>

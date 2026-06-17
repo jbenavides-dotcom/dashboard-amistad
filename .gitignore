@@ -1,0 +1,12 @@
+node_modules/
+*.log
+
+# enfoque anterior (Apps Script) — no publicar
+apps-script/
+
+# Nunca subir credenciales
+service-account-key.json
+*-sa-key.json
+*.key.json
+.env
+.env.local
