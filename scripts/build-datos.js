@@ -28,12 +28,18 @@ const META = {
 };
 
 // ===== Credenciales =====
+function parseKey(raw) {
+  // Tolera BOM (U+FEFF) y espacios extra (PowerShell suele anteponer BOM al pipear).
+  raw = String(raw);
+  if (raw.charCodeAt(0) === 0xFEFF) raw = raw.slice(1);
+  return JSON.parse(raw.trim());
+}
 function getCredentials() {
   if (process.env.GOOGLE_SA_KEY_JSON) {
-    return JSON.parse(process.env.GOOGLE_SA_KEY_JSON);
+    return parseKey(process.env.GOOGLE_SA_KEY_JSON);
   }
   if (process.env.GOOGLE_SA_KEY_FILE) {
-    return JSON.parse(fs.readFileSync(process.env.GOOGLE_SA_KEY_FILE, 'utf8'));
+    return parseKey(fs.readFileSync(process.env.GOOGLE_SA_KEY_FILE, 'utf8'));
   }
   throw new Error('Falta GOOGLE_SA_KEY_JSON (Actions) o GOOGLE_SA_KEY_FILE (local).');
 }
