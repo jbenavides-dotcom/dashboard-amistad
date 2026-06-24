@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-06-24 13:15 UTC",
+  "actualizado": "2026-06-24 16:13 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 1022,
-    "disponible_pergamino_kg": 1001.5,
+    "compra_pergamino_kg": 1282.6,
+    "disponible_pergamino_kg": 1256.5,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 25,
-    "muestras_kg": 3
+    "sacos": 32,
+    "muestras_kg": 3.5
   },
   "baches": [
     {
@@ -31,6 +31,18 @@
       "kg_disponibles": 1001.5,
       "sacos": 25,
       "muestras": 3
+    },
+    {
+      "bache": "002-26MV",
+      "fecha_entrada": "23-jun-26",
+      "remision": "143",
+      "proveedor": "RICARDO GAMEZ (LAS MARGARITAS)",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 260.6,
+      "kg_disponibles": 255,
+      "sacos": 7,
+      "muestras": 0.5
     }
   ]
 }
