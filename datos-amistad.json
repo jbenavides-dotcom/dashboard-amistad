@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-10 16:21 UTC",
+  "actualizado": "2026-07-10 18:19 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 1282.6,
-    "disponible_pergamino_kg": 1256.5,
+    "compra_pergamino_kg": 1539.8999999999999,
+    "disponible_pergamino_kg": 2288.5,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 32,
-    "muestras_kg": 3.5
+    "sacos": 39,
+    "muestras_kg": 4.5
   },
   "baches": [
     {
@@ -42,6 +42,30 @@
       "kg_brutos": 260.6,
       "kg_disponibles": 255,
       "sacos": 7,
+      "muestras": 0.5
+    },
+    {
+      "bache": "003-26MV",
+      "fecha_entrada": "4-jul-26",
+      "remision": "553",
+      "proveedor": "SANDRA MILENA REINOSO (EL CERRITO)",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 168.2,
+      "kg_disponibles": 165,
+      "sacos": 4,
+      "muestras": 0.5
+    },
+    {
+      "bache": "004-26MV",
+      "fecha_entrada": "10-jul-26",
+      "remision": "556",
+      "proveedor": "RICARDO GAMEZ (LAS MARGARITAS)",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 89.1,
+      "kg_disponibles": 867,
+      "sacos": 3,
       "muestras": 0.5
     }
   ]
