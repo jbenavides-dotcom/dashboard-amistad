@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-14 13:20 UTC",
+  "actualizado": "2026-07-14 15:19 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 1539.8999999999999,
-    "disponible_pergamino_kg": 2288.5,
+    "compra_pergamino_kg": 1925.8999999999999,
+    "disponible_pergamino_kg": 2676,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 39,
-    "muestras_kg": 4.5
+    "sacos": 47,
+    "muestras_kg": 5
   },
   "baches": [
     {
@@ -67,6 +67,30 @@
       "kg_disponibles": 867,
       "sacos": 3,
       "muestras": 0.5
+    },
+    {
+      "bache": "005-26MV",
+      "fecha_entrada": "11-jul-26",
+      "remision": "557",
+      "proveedor": "DANILO TORRES  (RINCON SANTOS)",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 386,
+      "kg_disponibles": 387.5,
+      "sacos": 8,
+      "muestras": 0.5
+    },
+    {
+      "bache": "006-26MV",
+      "fecha_entrada": "",
+      "remision": "",
+      "proveedor": "FAUSTINO REYES",
+      "proceso": "",
+      "variedad": "Castillo",
+      "kg_brutos": 0,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
     }
   ]
 }
