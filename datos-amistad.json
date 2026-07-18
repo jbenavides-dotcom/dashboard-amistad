@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-18 14:46 UTC",
+  "actualizado": "2026-07-18 15:51 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,7 +12,7 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 2357.7,
+    "compra_pergamino_kg": 5029.889999999999,
     "disponible_pergamino_kg": 3100.6,
     "bultos_verde": 0,
     "verde_kg": 0,
@@ -91,6 +91,66 @@
       "kg_disponibles": 424.6,
       "sacos": 9,
       "muestras": 0.5
+    },
+    {
+      "bache": "007-26MV",
+      "fecha_entrada": "8-jul-26",
+      "remision": "MCA 1357",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 108.84,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "008-26MV",
+      "fecha_entrada": "8-jul-26",
+      "remision": "MCA 1362",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 217.85,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "009-26MV",
+      "fecha_entrada": "17-jul-26",
+      "remision": "MCA 1334",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Papayo",
+      "kg_brutos": 120.5,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "010-26MV",
+      "fecha_entrada": "17-jul-26",
+      "remision": "MCA 1352",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Papayo",
+      "kg_brutos": 225,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "",
+      "fecha_entrada": "17-jul-26",
+      "remision": "",
+      "proveedor": "CODECAFE COOPERATIVA",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 2000,
+      "kg_disponibles": 0,
+      "sacos": 0,
+      "muestras": 0
     }
   ]
 }
