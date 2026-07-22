@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-22 17:11 UTC",
+  "actualizado": "2026-07-22 19:04 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 5029.889999999999,
-    "disponible_pergamino_kg": 3100.6,
+    "compra_pergamino_kg": 6918.389999999999,
+    "disponible_pergamino_kg": 7597.79,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 55,
-    "muestras_kg": 5.5
+    "sacos": 140,
+    "muestras_kg": 9.5
   },
   "baches": [
     {
@@ -100,9 +100,9 @@
       "proceso": "Washed",
       "variedad": "Borbón rosado",
       "kg_brutos": 108.84,
-      "kg_disponibles": 0,
-      "sacos": 0,
-      "muestras": 0
+      "kg_disponibles": 106.24,
+      "sacos": 3,
+      "muestras": 0.5
     },
     {
       "bache": "008-26MV",
@@ -112,9 +112,9 @@
       "proceso": "Washed",
       "variedad": "Borbón rosado",
       "kg_brutos": 217.85,
-      "kg_disponibles": 0,
-      "sacos": 0,
-      "muestras": 0
+      "kg_disponibles": 213.85,
+      "sacos": 5,
+      "muestras": 0.5
     },
     {
       "bache": "009-26MV",
@@ -124,9 +124,9 @@
       "proceso": "Washed",
       "variedad": "Papayo",
       "kg_brutos": 120.5,
-      "kg_disponibles": 0,
-      "sacos": 0,
-      "muestras": 0
+      "kg_disponibles": 117.9,
+      "sacos": 3,
+      "muestras": 0.5
     },
     {
       "bache": "010-26MV",
@@ -136,21 +136,57 @@
       "proceso": "Washed",
       "variedad": "Papayo",
       "kg_brutos": 225,
-      "kg_disponibles": 0,
-      "sacos": 0,
-      "muestras": 0
+      "kg_disponibles": 221,
+      "sacos": 5,
+      "muestras": 0.5
     },
     {
-      "bache": "",
+      "bache": "011-26MV",
       "fecha_entrada": "17-jul-26",
       "remision": "",
       "proveedor": "CODECAFE COOPERATIVA",
       "proceso": "Washed",
       "variedad": "Castillo",
-      "kg_brutos": 2000,
-      "kg_disponibles": 0,
-      "sacos": 0,
-      "muestras": 0
+      "kg_brutos": 3000,
+      "kg_disponibles": 2964.5,
+      "sacos": 50,
+      "muestras": 0.5
+    },
+    {
+      "bache": "012-26MV",
+      "fecha_entrada": "21-jul-26",
+      "remision": "MCA-2004",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 249.5,
+      "kg_disponibles": 245.5,
+      "sacos": 5,
+      "muestras": 0.5
+    },
+    {
+      "bache": "013-26MV",
+      "fecha_entrada": "21-jul-26",
+      "remision": "MCA-2005",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 281.5,
+      "kg_disponibles": 276.8,
+      "sacos": 6,
+      "muestras": 0.5
+    },
+    {
+      "bache": "014-26MV",
+      "fecha_entrada": "1-jul-26",
+      "remision": "--",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 357.5,
+      "kg_disponibles": 351.4,
+      "sacos": 8,
+      "muestras": 0.5
     }
   ]
 }
