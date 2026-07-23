@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-23 19:06 UTC",
+  "actualizado": "2026-07-23 20:56 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 6886.389999999999,
-    "disponible_pergamino_kg": 7565.79,
+    "compra_pergamino_kg": 10918.39,
+    "disponible_pergamino_kg": 11527.29,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 140,
-    "muestras_kg": 9.5
+    "sacos": 240,
+    "muestras_kg": 10
   },
   "baches": [
     {
@@ -147,8 +147,8 @@
       "proveedor": "CODECAFE COOPERATIVA",
       "proceso": "Washed",
       "variedad": "Castillo",
-      "kg_brutos": 2968,
-      "kg_disponibles": 2932.5,
+      "kg_brutos": 3000,
+      "kg_disponibles": 2964.5,
       "sacos": 50,
       "muestras": 0.5
     },
@@ -186,6 +186,18 @@
       "kg_brutos": 357.5,
       "kg_disponibles": 351.4,
       "sacos": 8,
+      "muestras": 0.5
+    },
+    {
+      "bache": "",
+      "fecha_entrada": "24-jul-26",
+      "remision": "",
+      "proveedor": "CODECAFE COOPERATIVA",
+      "proceso": "Washed",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 4000,
+      "kg_disponibles": 3929.5,
+      "sacos": 100,
       "muestras": 0.5
     }
   ]
