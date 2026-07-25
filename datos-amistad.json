@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-25 13:12 UTC",
+  "actualizado": "2026-07-25 14:58 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,8 +12,8 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 10838.39,
-    "disponible_pergamino_kg": 11447.29,
+    "compra_pergamino_kg": 10938.39,
+    "disponible_pergamino_kg": 11547.29,
     "bultos_verde": 0,
     "verde_kg": 0,
     "sacos": 240,
@@ -195,8 +195,8 @@
       "proveedor": "CODECAFE COOPERATIVA",
       "proceso": "Washed",
       "variedad": "Borbón rosado",
-      "kg_brutos": 4000,
-      "kg_disponibles": 3929.5,
+      "kg_brutos": 4100,
+      "kg_disponibles": 4029.5,
       "sacos": 100,
       "muestras": 0.5
     }
