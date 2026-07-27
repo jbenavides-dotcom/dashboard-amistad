@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-07-27 20:17 UTC",
+  "actualizado": "2026-07-27 22:00 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,12 +12,12 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 10938.39,
-    "disponible_pergamino_kg": 11547.29,
+    "compra_pergamino_kg": 11912.39,
+    "disponible_pergamino_kg": 12489.79,
     "bultos_verde": 0,
     "verde_kg": 0,
-    "sacos": 240,
-    "muestras_kg": 10
+    "sacos": 278,
+    "muestras_kg": 10.5
   },
   "baches": [
     {
@@ -143,13 +143,13 @@
     {
       "bache": "011-26MV",
       "fecha_entrada": "17-jul-26",
-      "remision": "",
+      "remision": "3650",
       "proveedor": "CODECAFE COOPERATIVA",
       "proceso": "Washed",
       "variedad": "Castillo",
-      "kg_brutos": 2920,
-      "kg_disponibles": 2884.5,
-      "sacos": 50,
+      "kg_brutos": 3021.5,
+      "kg_disponibles": 2966.5,
+      "sacos": 84,
       "muestras": 0.5
     },
     {
@@ -189,15 +189,27 @@
       "muestras": 0.5
     },
     {
-      "bache": "",
+      "bache": "015-26MV",
       "fecha_entrada": "24-jul-26",
-      "remision": "",
+      "remision": "249",
       "proveedor": "CODECAFE COOPERATIVA",
       "proceso": "Washed",
       "variedad": "Borbón rosado",
-      "kg_brutos": 4100,
-      "kg_disponibles": 4029.5,
-      "sacos": 100,
+      "kg_brutos": 4110,
+      "kg_disponibles": 4039.9,
+      "sacos": 87,
+      "muestras": 0.5
+    },
+    {
+      "bache": "016-26MV",
+      "fecha_entrada": "27-jul-26",
+      "remision": "564",
+      "proveedor": "ISAURO ROJAS",
+      "proceso": "Washed",
+      "variedad": "Castillo",
+      "kg_brutos": 862.5,
+      "kg_disponibles": 850.1,
+      "sacos": 17,
       "muestras": 0.5
     }
   ]
