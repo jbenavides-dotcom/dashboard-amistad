@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-08-11 19:57 UTC",
+  "actualizado": "2026-08-11 20:45 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -12,8 +12,8 @@
     "rendimiento_pct": 78
   },
   "actual": {
-    "compra_pergamino_kg": 11912.39,
-    "disponible_pergamino_kg": 12489.79,
+    "compra_pergamino_kg": 15855.39,
+    "disponible_pergamino_kg": 16432.79,
     "bultos_verde": 0,
     "verde_kg": 0,
     "sacos": 278,
@@ -211,6 +211,66 @@
       "kg_disponibles": 850.1,
       "sacos": 17,
       "muestras": 0.5
+    },
+    {
+      "bache": "017-26MV",
+      "fecha_entrada": "",
+      "remision": "MCA-1366",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Natural",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 615,
+      "kg_disponibles": 615,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "018-26MV",
+      "fecha_entrada": "",
+      "remision": "MCA-1378",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Natural",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 588,
+      "kg_disponibles": 588,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "019-26MV",
+      "fecha_entrada": "",
+      "remision": "MCA-1379",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Natural",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 822,
+      "kg_disponibles": 822,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "020-26MV",
+      "fecha_entrada": "",
+      "remision": "MCA-2007",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Natural",
+      "variedad": "Papayo",
+      "kg_brutos": 418,
+      "kg_disponibles": 418,
+      "sacos": 0,
+      "muestras": 0
+    },
+    {
+      "bache": "021-26MV",
+      "fecha_entrada": "",
+      "remision": "MCA-2008",
+      "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
+      "proceso": "Natural",
+      "variedad": "Borbón rosado",
+      "kg_brutos": 1500,
+      "kg_disponibles": 1500,
+      "sacos": 0,
+      "muestras": 0
     }
   ]
 }
