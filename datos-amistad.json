@@ -1,7 +1,7 @@
 {
   "programa": "La Amistad",
   "descripcion": "Programa de vecinos (Mejores Vecinos) — café comprado a CODECAFE COOPERATIVA",
-  "actualizado": "2026-08-13 20:35 UTC",
+  "actualizado": "2026-08-13 21:38 UTC",
   "fuente": "Sheet PT 2026 · gid=948665575 (LA_AMISTAD)",
   "metas": {
     "compra_pergamino_kg": 18000,
@@ -179,7 +179,7 @@
     {
       "bache": "014-26MV",
       "fecha_entrada": "1-jul-26",
-      "remision": "--",
+      "remision": "MCA-1347",
       "proveedor": "MEMORYS CAFE (ACEVEDO HUILA)",
       "proceso": "Washed",
       "variedad": "Borbón rosado",
